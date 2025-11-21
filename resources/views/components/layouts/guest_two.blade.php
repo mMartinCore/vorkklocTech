@@ -23,7 +23,8 @@
     <!-- AOS (Animate on Scroll) -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <link rel="icon" href="{{ asset('images/Watopak-logo.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/logo-no-text.png') }}" type="image/x-icon">
+    <meta name="application-name" content="VorkklocTech">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     

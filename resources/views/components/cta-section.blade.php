@@ -1,8 +1,8 @@
 @props([
-    'title' => 'Ready to Start Shipping?', 
-    'subtitle' => 'Experience our fast, reliable, and affordable shipping services today',
-    'buttonText' => 'Sign Up Now',
-    'buttonUrl' => 'https://watopak.jashippers.com/register',
+    'title' => 'Ready to Transform Your Business?', 
+    'subtitle' => 'Let us develop custom software solutions that increase efficiency and productivity for your business',
+    'buttonText' => 'Get Started',
+    'buttonUrl' => '#contact',
     'secondButtonText' => null,
     'secondButtonUrl' => null,
     'showStats' => true
@@ -73,7 +73,7 @@
             <div class="flex flex-col sm:flex-row gap-6 justify-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <a href="{{ $buttonUrl }}" 
                    class="modern-btn primary-btn relative overflow-hidden bg-gradient-to-r from-secondary-500 to-secondary-600 text-white py-3.5 sm:py-4 px-8 sm:px-10 rounded-full shadow-lg font-display font-semibold tracking-wide text-sm inline-flex items-center justify-center"
-                   aria-label="Sign up for Watopak shipping services"
+                   aria-label="Get started with VorkklocTech"
                    role="button">
                     <span class="sr-only">Navigate to registration page</span>
                     <span class="relative z-10 flex items-center">

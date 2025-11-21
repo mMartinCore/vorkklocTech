@@ -43,37 +43,37 @@
             <div class="lg:col-span-1">
                 <div class="flex items-start mb-8">
                     <div class="relative group">
-                        <img src="{{ asset('images/Watopak-logo.png') }}" alt="Watopak Logistics Logo" class="h-16 w-16 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-110">
+                        <img src="{{ asset('images/logo-no-text.png') }}" alt="VorkklocTech Logo" class="h-16 w-16 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div class="ml-4 flex flex-col">
-                        <span class="font-bold text-2xl text-white">Watopak</span>
-                        <span class="font-semibold text-secondary-400 text-sm tracking-wider uppercase">Logistics Services</span>
-                        <span class="text-gray-400 italic text-sm mt-1">Premium. Secure. Reliable</span>
+                        <span class="font-bold text-2xl text-white">VorkklocTech</span>
+                        <span class="font-semibold text-secondary-400 text-sm tracking-wider uppercase">Custom Software Development</span>
+                        <span class="text-gray-400 italic text-sm mt-1">Increase Efficiency. Boost Productivity.</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-300 mb-8 leading-relaxed">
-                    Delivering premium shipping services from the USA to Jamaica with exceptional care, cutting-edge technology, and unwavering professionalism.
+                    Building custom digital solutions that increase efficiency and productivity. We design and develop tailored websites, web applications, APIs, and mobile apps that solve specific operational challenges and drive growth.
                 </p>
                 
                 <!-- Enhanced Social Media Links -->
                 <div class="flex space-x-4">
-                    <a href="https://wa.me/18763889648?text=Hello%2C%20I'm%20contacting%20you%20from%20the%20Watopak%20website" target="_blank" 
+                    <a href="https://www.facebook.com/vorkkloctech" target="_blank" 
                        class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 group">
                         <i class="fab fa-facebook-f text-white text-lg group-hover:scale-110 transition-transform duration-300"></i>
                     </a>
-                    <a href="https://www.instagram.com/watopak_logistics" target="_blank" 
+                    <a href="https://www.instagram.com/vorkkloctech" target="_blank" 
                        class="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg hover:shadow-pink-500/25 transition-all duration-300 group">
                         <i class="fab fa-instagram text-white text-lg group-hover:scale-110 transition-transform duration-300"></i>
                     </a>
-                    <a href="https://wa.me/18763889648" target="_blank" 
-                       class="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg hover:shadow-green-500/25 transition-all duration-300 group">
-                        <i class="fab fa-whatsapp text-white text-lg group-hover:scale-110 transition-transform duration-300"></i>
-                    </a>
-                    <a href="https://twitter.com/watopak_logistics" target="_blank" 
+                    <a href="https://twitter.com/vorkkloctech" target="_blank" 
                        class="w-12 h-12 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg hover:shadow-blue-400/25 transition-all duration-300 group">
                         <i class="fab fa-twitter text-white text-lg group-hover:scale-110 transition-transform duration-300"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/vorkkloctech" target="_blank" 
+                       class="w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-800 rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg hover:shadow-blue-700/25 transition-all duration-300 group">
+                        <i class="fab fa-linkedin-in text-white text-lg group-hover:scale-110 transition-transform duration-300"></i>
                     </a>
                 </div>
             </div>
@@ -92,9 +92,9 @@
                         </a>
                     </li> 
                     <li>
-                        <a href="{{ route('rates') }}" class="text-gray-300 hover:text-white transition-all duration-300 font-medium text-sm uppercase tracking-wider flex items-center group">
+                        <a href="#services" class="text-gray-300 hover:text-white transition-all duration-300 font-medium text-sm uppercase tracking-wider flex items-center group">
                             <div class="w-2 h-2 bg-secondary-400 rounded-full mr-4 group-hover:scale-150 transition-transform duration-300"></div>
-                            <span class="group-hover:translate-x-2 transition-transform duration-300">Our Rates</span>
+                            <span class="group-hover:translate-x-2 transition-transform duration-300">Our Services</span>
                         </a>
                     </li> 
                     <li>
@@ -173,30 +173,8 @@
                             <i class="fas fa-map-marker-alt text-white"></i>
                         </div>
                         <div>
-                            <p class="text-white font-semibold">Main Office</p>
-                            <p class="text-gray-300 text-sm leading-relaxed">Shop #2, Watopak Street<br>Watopak, Jamaica</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start group">
-                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-3 mr-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-phone-alt text-white"></i>
-                        </div>
-                        <div>
-                            <p class="text-white font-semibold">Call Us</p>
-                            <a href="tel:+18763889648" class="text-gray-300 hover:text-secondary-400 transition-colors duration-300">
-                                +1 (876) 388-9648
-                            </a>
-                        </div> 
-                    </li>
-                    <li class="flex items-start group">
-                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-xl p-3 mr-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fab fa-whatsapp text-white"></i>
-                        </div>
-                        <div>
-                            <p class="text-white font-semibold">WhatsApp</p>
-                            <a href="https://wa.me/18763889648?text=Hello%2C%20I'm%20contacting%20you%20from%20the%20Watopak%20website" target="_blank" class="text-gray-300 hover:text-green-400 transition-colors duration-300">
-                                Chat with us instantly
-                            </a>
+                            <p class="text-white font-semibold">Location</p>
+                            <p class="text-gray-300 text-sm leading-relaxed">Jamaica</p>
                         </div>
                     </li>
                     <li class="flex items-start group">
@@ -205,8 +183,8 @@
                         </div>
                         <div>
                             <p class="text-white font-semibold">Email Support</p>
-                            <a href="mailto:info@watopak.com" class="text-gray-300 hover:text-secondary-400 transition-colors duration-300">
-                                info@watopak.com
+                            <a href="mailto:info@vorkkloctech.com" class="text-gray-300 hover:text-secondary-400 transition-colors duration-300">
+                                info@vorkkloctech.com
                             </a>
                         </div>
                     </li>
@@ -243,7 +221,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex flex-col md:flex-row items-center gap-4">
                     <p class="text-gray-400 text-sm">
-                        &copy; {{ date('Y') }} Watopak Logistics. All Rights Reserved.
+                        &copy; {{ date('Y') }} VorkklocTech. All Rights Reserved.
                     </p>
                     <!-- <div class="flex items-center gap-2">
                         <span class="text-gray-500 text-xs">Made with</span>

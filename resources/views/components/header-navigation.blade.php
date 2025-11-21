@@ -14,10 +14,10 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="container mx-auto px-4 py-3">
         <nav class="flex justify-between items-center">
-            <!-- Watopak Professional Logo -->
+            <!-- VorkklocTech Professional Logo -->
             <div class="flex items-center space-x-4" data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
                 <a href="{{ route('home') }}" class="relative">
-                    <img src="{{ asset('images/Watopak-logo.png') }}" alt="Watopak Logistics Logo" class="h-14 w-auto rounded-lg shadow-md transition-transform duration-300 hover:scale-105" id="navLogo">
+                    <img src="{{ asset('images/logo-no-text.png') }}" alt="VorkklocTech Logo" class="h-14 w-auto rounded-lg shadow-md transition-transform duration-300 hover:scale-105" id="navLogo">
                     <div class="absolute -inset-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
                 </a>
                 <!-- <div class="flex flex-col">
@@ -39,11 +39,11 @@
                     @endif
                 </a> 
                 <a 
-                    href="{{ route('rates') }}" 
-                    class="relative px-4 py-2 rounded-lg font-primary font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-all duration-300 {{ $active === 'rates' ? 'text-primary-700 bg-primary-100 shadow-sm' : '' }}"
+                    href="#services" 
+                    class="relative px-4 py-2 rounded-lg font-primary font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-all duration-300 {{ $active === 'services' ? 'text-primary-700 bg-primary-100 shadow-sm' : '' }}"
                 >
-                    Rates
-                    @if($active === 'rates')
+                    Services
+                    @if($active === 'services')
                         <div class="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-lg"></div>
                     @endif
                 </a> 
@@ -66,27 +66,13 @@
                     @endif
                 </a>
                 <a 
-                    href="https://watopak.jashippers.com/register" 
-                    target="_blank"
+                    href="{{ route('contact') }}" 
                     class="professional-button hero-primary-btn group relative overflow-hidden bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-white py-2.5 px-6 rounded-xl shadow-lg hover:shadow-secondary-500/25 font-display font-semibold text-sm inline-flex items-center justify-center border border-secondary-400/30 touch-target performance-optimized focus-visible-only"
-                    aria-label="Sign up for Watopak shipping services"
+                    aria-label="Contact VorkklocTech"
                     role="button"
                 >
-                    <span class="sr-only">Open registration page in new tab</span>
-                    <span class="relative z-10">Sign Up</span>
-                    <div class="absolute inset-0 button-shine"></div>
-                    <div class="absolute inset-0 button-expand"></div>
-                </a>
-
-                <a 
-                    href="https://watopak.jashippers.com/login" 
-                    target="_blank"
-                    class="professional-button hero-primary-btn group relative overflow-hidden border-2 border-secondary-500 text-secondary-500 hover:text-white bg-transparent hover:bg-secondary-500 py-2.5 px-6 rounded-xl shadow-lg hover:shadow-secondary-500/25 font-display font-semibold text-sm inline-flex items-center justify-center touch-target performance-optimized focus-visible-only"
-                    aria-label="Login to your Watopak account"
-                    role="button"
-                >
-                    <span class="sr-only">Open login page in new tab</span>
-                    <span class="relative z-10">Login</span>
+                    <span class="sr-only">Contact us</span>
+                    <span class="relative z-10">Get Started</span>
                     <div class="absolute inset-0 button-shine"></div>
                     <div class="absolute inset-0 button-expand"></div>
                 </a>
@@ -125,10 +111,10 @@
                             Home
                         </a> 
                         <a 
-                            href="{{ route('rates') }}" 
-                            class="text-theme_neutral-700 hover:text-theme_color_secondary-100 transition-colors duration-300 py-2 font-display text-sm tracking-wide uppercase {{ $active === 'rates' ? 'text-theme_color_secondary-100 font-semibold' : '' }}"
+                            href="#services" 
+                            class="text-theme_neutral-700 hover:text-theme_color_secondary-100 transition-colors duration-300 py-2 font-display text-sm tracking-wide uppercase {{ $active === 'services' ? 'text-theme_color_secondary-100 font-semibold' : '' }}"
                         >
-                            Rates
+                            Services
                         </a> 
                         <a 
                             href="{{ route('about') }}" 
@@ -143,19 +129,10 @@
                             Contact
                         </a>
                         <a 
-                            href="https://portal.watopak.com/register" 
+                            href="{{ route('contact') }}" 
                             class="bg-theme_color_secondary-100 hover:bg-theme_color_secondary-200 text-white font-display text-sm tracking-wide uppercase py-3 px-4 rounded-md shadow-md text-center transition-all duration-300 transform hover:-translate-y-1"
-                            target="_blank"
                         >
-                           Sign Up
-                        </a>
-
-                        <a 
-                            href="https://portal.watopak.com/login" 
-                            class="bg-theme_color_secondary-100 hover:bg-theme_color_secondary-200 text-white font-display text-sm tracking-wide uppercase py-3 px-4 rounded-md shadow-md text-center transition-all duration-300 transform hover:-translate-y-1"
-                            target="_blank"
-                        >
-                           Login
+                           Get Started
                         </a>
                     </div>
                 </div>

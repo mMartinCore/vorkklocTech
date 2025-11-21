@@ -8,7 +8,7 @@
         @include('partials.head')
         {!! SEO::generate(true) !!}
         <!-- Fonts -->
-        <link rel="icon" type="image/svg+xml" href="/assets/logo.png"/>
+        <link rel="icon" type="image/png" href="{{ asset('images/logo-no-text.png') }}"/>
      
  
     </head>

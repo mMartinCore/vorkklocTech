@@ -2,9 +2,9 @@
 <x-layouts.guest_two :active="'about'">
     <!-- Page Banner -->
     <x-page-banner 
-        title="About <span class='text-theme_color_primary-100 '>Watopak</span> Logistics"
-        subtitle="Your Premier Shipping Partner from USA to Jamaica"
-        backgroundImage="{{ asset('images/wato-global-shipping-logistics-hero.jpg') }}"
+        title="About <span class='text-theme_color_primary-100 '>VorkklocTech</span>"
+        subtitle="Custom Software Development. Increase Efficiency And Productivity."
+        backgroundImage=""
         breadcrumbs='[{"name": "Home", "url": "/"}, {"name": "About", "url": "/pages/about"}]'
     />
 
@@ -21,10 +21,10 @@
                 <div class="flex flex-col lg:flex-row items-center gap-16">
                     <div class="w-full lg:w-1/2" data-aos="fade-right">
                         <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8">
-                            Elevating Shipping Excellence from <span class="text-theme_color_primary-100">USA to Jamaica</span>
+                            Building Custom Digital Solutions for <span class="text-theme_color_primary-100">Business Growth</span>
                         </h1>
                         <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-                            We handle your packages with unmatched care and precision, ensuring they are delivered safely to you.
+                            VorkklocTech is a specialized software development and consultancy firm dedicated to one core mission: building custom digital solutions that increase efficiency and productivity for businesses. We design and develop tailored websites, web applications, APIs, and mobile apps that solve specific operational challenges and drive growth.
                         </p>
                         <!-- <div class="flex flex-wrap gap-6">
                             <div class="bg-white dark:bg-neutral-800 rounded-lg p-4 shadow-lg">
@@ -42,7 +42,23 @@
                         </div> -->
                     </div>
                     <div class="w-full lg:w-1/2" data-aos="fade-left">
-                        <img src="{{ asset('images/wato-pak-delivery-service-personnel-transferring-package-from-truck.jpg') }}" alt="Watopak Logistics team" class="rounded-2xl shadow-xl w-full">
+                        <div class="relative rounded-2xl shadow-xl w-full aspect-square bg-gradient-to-br from-blue-600/20 via-cyan-500/20 to-purple-600/20 overflow-hidden">
+                            <!-- Abstract Tech Pattern -->
+                            <div class="absolute inset-0 opacity-30">
+                                <div class="absolute inset-0" style="background-image: 
+                                    linear-gradient(30deg, transparent 40%, rgba(59, 130, 246, 0.1) 50%, transparent 60%),
+                                    linear-gradient(60deg, transparent 40%, rgba(6, 182, 212, 0.1) 50%, transparent 60%);
+                                    background-size: 100px 100px, 80px 80px;"></div>
+                            </div>
+                            <!-- Geometric Shapes -->
+                            <div class="absolute top-10 left-10 w-32 h-32 border-2 border-cyan-400/30 rounded-lg rotate-45"></div>
+                            <div class="absolute bottom-10 right-10 w-24 h-24 border-2 border-blue-400/30 rounded-full"></div>
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 border-2 border-purple-400/20 rounded-lg rotate-12"></div>
+                            <!-- Logo -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <img src="{{ asset('images/logo-no-text.png') }}" alt="VorkklocTech" class="w-32 h-32 opacity-50">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -58,7 +74,7 @@
                         </div>
                         <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h3>
                         <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        To revolutionize international shipping by connecting Jamaican customers with their favorite USA retailers. We do this by providing a premium, secure, and reliable logistics service powered by innovative technology and a commitment to exceptional customer care. </p>
+                        To build custom digital solutions that increase efficiency and productivity for businesses. We design and develop tailored websites, web applications, APIs, and mobile apps that solve specific operational challenges and drive growth. Our approach combines innovative technology with a deep understanding of business needs to deliver software that works harder, so your business can work smarter. </p>
                     </div>
                     <div class="bg-white dark:bg-neutral-800 rounded-2xl p-8 shadow-xl" data-aos="fade-up" data-aos-delay="100">
                         <div class="w-16 h-16 bg-gradient-to-br from-theme_color_secondary-100 to-theme_color_accent-100 rounded-full flex items-center justify-center mb-6">
@@ -68,39 +84,42 @@
                         </div>
                         <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Vision</h3>
                         <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        We strive to become the top premium shipping service in Jamaica. We'll achieve this by setting new standards for international logistics, using advanced technology, protecting the environment, and committing to excellent customer service.  </p>
+                        To be the leading custom software development firm that businesses trust to transform their operations through innovative technology. We envision a future where every business has access to custom software solutions that streamline processes, eliminate inefficiencies, and deliver transparent, measurable results. Whether we're building a custom inventory management system for a client or our own on-demand delivery platform, our approach remains the same: engineer software that works harder, so businesses can work smarter.  </p>
                     </div>
                 </div>
             </section>
 
             <!-- Company Story -->
-            <!-- <section class="py-20">
+            <section class="py-20">
                 <div class="max-w-4xl mx-auto text-center">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8" data-aos="fade-up">
-                        The Watopak Story
+                        The VorkklocTech Story
                     </h2>
                     <div class="prose max-w-none text-gray-700 dark:text-gray-300" data-aos="fade-up" data-aos-delay="100">
                         <p class="text-lg leading-relaxed mb-6">
-                            Watopak Logistics was founded with a revolutionary vision: to transform the way Jamaicans access the global marketplace. We recognized that online shopping from USA retailers shouldn't be limited by geographical boundaries or complicated shipping processes.
+                            VorkklocTech was founded with a clear vision: to build custom software solutions that solve real business problems. We recognized that off-the-shelf software often falls short of meeting specific operational needs, and businesses deserve tailored solutions that truly fit their unique requirements.
                         </p>
                         <p class="text-lg leading-relaxed mb-6">
-                            Our journey began when our founders experienced firsthand the challenges of international shipping - delayed packages, hidden fees, and unreliable service. They envisioned a solution that would provide Jamaican customers with their own premium USA mailbox address, coupled with white-glove delivery service that treats every package as if it were their own.
+                            Our flagship product, <strong>Courier-App</strong>, is the ultimate demonstration of our expertise. We didn't just observe the inefficiencies in the local delivery market—we used our own software development principles to build the solution. This platform embodies our core belief: that the right technology should streamline complex processes, eliminate wasted time, and deliver transparent, measurable results.
+                        </p>
+                        <p class="text-lg leading-relaxed mb-6">
+                            Whether we're building a custom inventory management system for a client or our own on-demand delivery platform, our approach remains the same. We develop websites that drive growth, expand reach, and boost revenue. We engineer software that works harder, so your business—and ours—can work smarter.
                         </p>
                         <p class="text-lg leading-relaxed">
-                            Today, Watopak Logistics stands as a testament to innovation in logistics, combining advanced tracking technology, professional customer service, and a commitment to excellence that has made us the trusted choice for thousands of satisfied customers across Jamaica.
+                            Today, VorkklocTech stands as a testament to the power of custom software development, combining technical expertise, business acumen, and a commitment to excellence that has made us the trusted choice for businesses seeking to transform their operations through technology.
                         </p>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
         </div>
     </main>
     
             <!-- Call to Action -->
             <x-cta-section 
-                buttonUrl="https://watopak.jashippers.com/register"
-                buttonText="Join Watopak Today"
-                title="Get started with Watopak Logistics"
-                subtitle=" Save time and money with our service "
+                buttonUrl="{{ route('contact') }}"
+                buttonText="Get Started"
+                title="Ready to Transform Your Business?"
+                subtitle="Let us develop custom software solutions that increase efficiency and productivity for your business."
             />
 </x-layouts.guest_two> 

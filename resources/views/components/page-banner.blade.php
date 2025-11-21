@@ -26,22 +26,22 @@
     </div>
 
     <style>
-        /* Subtle modern banner with elegant color scheme */
+        /* Tech-focused modern banner */
         .curved-title-bg {
             position: relative;
             background: linear-gradient(140deg, 
-                #2F5F8F 0%,
-                #4682B4 25%,
-                #2F5F8F 50%,
-                #4682B4 75%,
-                #5B9BD5 100%
+                #1e293b 0%,
+                #1e40af 25%,
+                #0e7490 50%,
+                #1e40af 75%,
+                #1e293b 100%
             );
             color: white;
             padding: 6rem 2rem 7rem;
             margin-bottom: -5rem;
             overflow: hidden;
             z-index: 1;
-            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.15);
+            box-shadow: 0 15px 30px rgba(59, 130, 246, 0.15);
             border-radius: 0;
         }
         

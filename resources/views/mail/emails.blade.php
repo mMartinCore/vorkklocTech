@@ -261,7 +261,7 @@
         <!-- Header Section -->
         <div class="email-header">
             <div class="logo-container">
-                <img src="https://watopak.com/images/Watopak-logo.png" alt="{{ config('app.name') }}" class="logo">
+                <img src="{{ config('app.url') }}/images/logo-no-text.png" alt="{{ config('app.name') }}" class="logo">
             </div>
             <h1 class="email-title">New Contact Inquiry</h1>
             <p class="email-subtitle">{{ now()->format('F j, Y \a\t g:i A') }}</p>

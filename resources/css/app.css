@@ -9,7 +9,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    /* Watopak Typography System */
+    /* VorkklocTech Typography System */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-secondary: 'Source Sans Pro', system-ui, sans-serif;
     --font-display: 'Poppins', sans-serif;
@@ -19,31 +19,31 @@
     --font-sans: var(--font-secondary);
     --font-serif: 'Playfair Display', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
-    /* Watopak Logo-Inspired Color Palette - Professional Blue Primary */
+    /* VorkklocTech Tech-Focused Color Palette - Modern Tech Blue Primary */
     --color-primary-50: #eff6ff;
     --color-primary-100: #dbeafe;
     --color-primary-200: #bfdbfe;
     --color-primary-300: #93c5fd;
     --color-primary-400: #60a5fa;
-    --color-primary-500: #5B9BD5;
-    /* Main WATOPAK logo blue */
-    --color-primary-600: #4682B4;
-    --color-primary-700: #2563eb;
+    --color-primary-500: #3b82f6;
+    /* Modern tech blue */
+    --color-primary-600: #2563eb;
+    --color-primary-700: #1d4ed8;
     --color-primary-800: #1e40af;
     --color-primary-900: #1e3a8a;
 
-    /* Watopak Logo-Inspired Color Palette - Vibrant Red Secondary */
-    --color-secondary-50: #fef2f2;
-    --color-secondary-100: #fee2e2;
-    --color-secondary-200: #fecaca;
-    --color-secondary-300: #fca5a5;
-    --color-secondary-400: #f87171;
-    --color-secondary-500: #ef4444;
-    /* Main logo red color */
-    --color-secondary-600: #dc2626;
-    --color-secondary-700: #b91c1c;
-    --color-secondary-800: #991b1b;
-    --color-secondary-900: #7f1d1d;
+    /* VorkklocTech Tech-Focused Color Palette - Cyan Accent Secondary */
+    --color-secondary-50: #ecfeff;
+    --color-secondary-100: #cffafe;
+    --color-secondary-200: #a5f3fc;
+    --color-secondary-300: #67e8f9;
+    --color-secondary-400: #22d3ee;
+    --color-secondary-500: #06b6d4;
+    /* Modern tech cyan */
+    --color-secondary-600: #0891b2;
+    --color-secondary-700: #0e7490;
+    --color-secondary-800: #155e75;
+    --color-secondary-900: #164e63;
 
     /* Professional Neutral Grays */
     --color-neutral-50: #f8fafc;
@@ -138,7 +138,7 @@
 }
 
 /* ================================
-   WATOPAK PROFESSIONAL INTERACTION SYSTEM
+   VORKKLOCTECH PROFESSIONAL INTERACTION SYSTEM
    ================================ */
 
 /* Professional Button System */

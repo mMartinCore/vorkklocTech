@@ -27,7 +27,7 @@ class PageController extends Controller
         $ttlSeconds = 60 * 60 * 24;
 
         if (! file_exists($path) || (time() - filemtime($path)) > $ttlSeconds) {
-            SitemapGenerator::create('https://watopak.com/')->writeToFile($path);
+            SitemapGenerator::create(config('app.url'))->writeToFile($path);
         }
 
         return response()->file($path);
@@ -35,50 +35,35 @@ class PageController extends Controller
 
     public function home()
     {
-        SEOTools::setTitle('Watopak Logistics | #1 USA to Jamaica Shipping & Package Forwarding');
-        SEOTools::setDescription('Get your FREE USA shipping address today! Shop Amazon, eBay & US stores with fast, reliable delivery to Jamaica. Choose from air & sea freight options. Join thousands of satisfied customers!');
+        SEOTools::setTitle('VorkklocTech | Custom Software Development - Increase Efficiency And Productivity');
+        SEOTools::setDescription('VorkklocTech specializes in custom software development. We design and develop tailored websites, web applications, APIs, and mobile apps that solve specific operational challenges and drive growth. Increase efficiency and productivity with our custom digital solutions.');
         SEOMeta::setKeywords([
-            'Jamaica USA Mailbox', 'USA Shipping Address Jamaica', 'Online Shopping Jamaica Delivery', 'Package Forwarding Jamaica', 
-            'Amazon Shipping to Jamaica', 'eBay Shipping to Jamaica', 'US to Jamaica Logistics Service', 'Best Shipping Jamaica',
-            'Cheap Sea Freight Jamaica', 'Fast Air Freight Jamaica', 'Jamaica Package Consolidation', 'Jamaica Customs Clearance',
-            'Jamaica Personal Shopper', 'Kingston Delivery Service', 'Montego Bay Shipping', 'Jamaica Freight Forwarder',
-            'USA Shopping Jamaica Address', 'Jamaica Import Service', 'Ship Large Items to Jamaica', 'Jamaica Shipping Calculator'
+            'Custom Software Development', 'Web Development', 'Mobile App Development', 'API Development', 
+            'Software Consulting', 'Custom Web Applications', 'E-commerce Development', 'Business Software Solutions',
+            'Software Development Company', 'Custom Software Solutions', 'Web Application Development', 'Mobile App Design',
+            'API Integration', 'Software Development Services', 'Custom Software Company', 'Digital Solutions',
+            'Business Process Automation', 'Software Engineering', 'Full Stack Development', 'Software Development Agency'
         ]);
-        SEOTools::twitter()->setSite('@watopak.com');
+        SEOTools::twitter()->setSite('@vorkkloctech');
         
         // Set structured data for business
-        JsonLd::setTitle('Watopak Logistics - #1 USA to Jamaica Shipping & Package Forwarding');
-        JsonLd::setDescription('Get your FREE USA shipping address to shop online from US retailers with fast, secure delivery to Jamaica. Air & Sea freight options available.');
-        JsonLd::setType('LocalBusiness');
-        JsonLd::addValue('name', 'Watopak Logistics Services');
-        JsonLd::addValue('url', 'https://watopak.com');
-        JsonLd::addValue('logo', 'https://watopak.com/images/logo.png');
-        JsonLd::addValue('image', 'https://watopak.com/images/watopak-Logistics-hero.png');
-        JsonLd::addValue('priceRange', '$$');
+        JsonLd::setTitle('VorkklocTech - Custom Software Development');
+        JsonLd::setDescription('Custom Software Development. Increase Efficiency And Productivity. We design and develop tailored websites, web applications, APIs, and mobile apps that solve specific operational challenges and drive growth.');
+        JsonLd::setType('Organization');
+        JsonLd::addValue('name', 'VorkklocTech');
+        JsonLd::addValue('url', config('app.url'));
+        JsonLd::addValue('logo', config('app.url') . '/images/logo-no-text.png');
+        JsonLd::addValue('image', config('app.url') . '/images/watopak-logistics-hero.png');
+        JsonLd::addValue('description', 'Custom Software Development. Increase Efficiency And Productivity.');
         JsonLd::addValue('address', [
             '@type' => 'PostalAddress',
-            'streetAddress' => '123 Commerce Plaza, Spanish Town Road',
-            'addressLocality' => 'Kingston',
-            'addressRegion' => 'Kingston',
-            'postalCode' => 'JMAAW01',
             'addressCountry' => 'Jamaica'
         ]);
-        JsonLd::addValue('geo', [
-            '@type' => 'GeoCoordinates',
-            'latitude' => '17.9714',
-            'longitude' => '-76.7931'
-        ]);
-        JsonLd::addValue('telephone', '+1-876-555-9800');
-        JsonLd::addValue('email', 'info@watopak.com');
-        JsonLd::addValue('openingHours', [
-            'Mo-Fr 08:00-18:00',
-            'Sa 09:00-16:00',
-            'Su Closed'
-        ]);
+        JsonLd::addValue('email', 'info@vorkkloctech.com');
         JsonLd::addValue('sameAs', [
-            'https://www.facebook.com/watopak.com',
-            'https://www.instagram.com/watopak_logistics',
-            'https://twitter.com/watopak.com'
+            'https://www.facebook.com/vorkkloctech',
+            'https://www.instagram.com/vorkkloctech',
+            'https://twitter.com/vorkkloctech'
         ]);
         
         
@@ -88,42 +73,42 @@ class PageController extends Controller
             'mainEntity' => [
                 [
                     '@type' => 'Question',
-                    'name' => 'How do I get a USA shipping address with Watopak Logistics?',
+                    'name' => 'What services does VorkklocTech offer?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'Simply register for free on our website and you\'ll instantly receive your personal USA shipping address. You can then use this address when shopping at any US online retailer.'
+                        'text' => 'VorkklocTech specializes in custom software development including web development, mobile app development, API development and integration, and software consulting. We design and develop tailored websites, web applications, APIs, and mobile apps that solve specific operational challenges and drive growth.'
                     ]
                 ],
                 [
                     '@type' => 'Question',
-                    'name' => 'How long does shipping take from USA to Jamaica?',
+                    'name' => 'How long does custom software development take?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'Our Air Freight service delivers in 5-7 business days, while Sea Freight takes 4-6 weeks.'
+                        'text' => 'Development timelines vary based on project scope and complexity. We follow an agile development process that includes discovery, development, and deployment phases. Contact us for a detailed timeline based on your specific requirements.'
                     ]
                 ],
                 [
                     '@type' => 'Question',
-                    'name' => 'Does Watopak handle customs clearance in Jamaica?',
+                    'name' => 'What technologies does VorkklocTech use?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'Yes, we provide complete customs clearance services including documentation handling, duty calculation assistance, and regulatory compliance to ensure your packages clear customs quickly.'
+                        'text' => 'We use modern technologies and frameworks including React, Laravel, Node.js, React Native, Flutter, and various cloud platforms. Our technology stack is chosen based on your specific project requirements and business needs.'
                     ]
                 ],
                 [
                     '@type' => 'Question',
-                    'name' => 'What items can I ship with Watopak Logistics?',
+                    'name' => 'Does VorkklocTech provide ongoing support after deployment?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'We ship most items including electronics, clothing, auto parts, furniture, appliances, and more. Our Air Freight is ideal for smaller items, while Sea Freight is perfect for large items like refrigerators, stoves, and barrels.'
+                        'text' => 'Yes, we provide ongoing support and maintenance services to ensure your software continues to perform optimally. We offer training, bug fixes, updates, and feature enhancements as your business grows.'
                     ]
                 ],
                 [
                     '@type' => 'Question',
-                    'name' => 'How much does shipping from USA to Jamaica cost?',
+                    'name' => 'What is Courier-App?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'Shipping costs depend on weight, dimensions, and shipping method. Air Freight starts at $750 JMD per pound, while Sea Freight starts at $650 JMD per pound. Use our online calculator for an instant quote.'
+                        'text' => 'Courier-App is VorkklocTech\'s flagship product, an on-demand delivery platform that demonstrates our expertise in building custom software solutions. It embodies our core belief that the right technology should streamline complex processes and deliver transparent, measurable results.'
                     ]
                 ]
             ]
@@ -154,7 +139,7 @@ class PageController extends Controller
             '@type' => 'LocalBusiness',
             'name' => 'Watopak Logistics Services',
             'url' => 'https://watopak.com',
-            'logo' => 'https://watopak.com/images/logo.png',
+            'logo' => config('app.url') . '/images/logo-no-text.png',
             'address' => [
                 '@type' => 'PostalAddress',
                 'streetAddress' => '123 Commerce Plaza, Spanish Town Road',
@@ -405,41 +390,29 @@ class PageController extends Controller
 
     public function contact()
     {
-        SEOTools::setTitle('Contact Watopak Logistics - Connect with Our Expert Team');
-        SEOTools::setDescription('Get in touch with Watopak Logistics for all your premium shipping needs. Contact us via phone, email, or visit our modern facility in Kingston, Jamaica at 123 Commerce Plaza. Our dedicated customer service team provides personalized assistance.');
+        SEOTools::setTitle('Contact VorkklocTech - Get Started with Custom Software Development');
+        SEOTools::setDescription('Get in touch with VorkklocTech for all your custom software development needs. Contact us to discuss your project and learn how we can help increase efficiency and productivity for your business.');
         SEOMeta::setKeywords([
-            'Contact Watopak Logistics', 'Jamaica shipping contact', 'shipping customer service',
-            'shipping help Jamaica', 'Watopak Logistics phone', 'Watopak Logistics email',
-            'Kingston shipping company', 'Jamaica Logistics contact', 'shipping inquiry',
-            'shipping support Jamaica', 'premium shipping service', 'online shopping delivery'
+            'Contact VorkklocTech', 'Software development contact', 'Custom software inquiry',
+            'Web development consultation', 'Mobile app development contact', 'Software consulting',
+            'VorkklocTech contact', 'Software development quote', 'Custom software consultation',
+            'Software development support', 'Technology consulting contact', 'Digital solutions inquiry'
         ]);
-        SEOTools::twitter()->setSite('@watopak.com');
+        SEOTools::twitter()->setSite('@vorkkloctech');
         
         // JSON-LD for contact page
-        JsonLd::setTitle('Contact Watopak Logistics');
-        JsonLd::setDescription('Contact information for Watopak Logistics premium shipping services in Jamaica.');
+        JsonLd::setTitle('Contact VorkklocTech');
+        JsonLd::setDescription('Contact information for VorkklocTech custom software development services.');
         JsonLd::setType('ContactPage');
         JsonLd::addValue('contactPoint', [
             '@type' => 'ContactPoint',
-            'telephone' => '+1-876-555-9800',
             'contactType' => 'customer service',
-            'email' => 'info@watopak.com',
-            'areaServed' => 'Jamaica',
-            'hoursAvailable' => [
-                'Monday-Friday: 8AM-6PM',
-                'Saturday: 9AM-4PM',
-                'Sunday: Closed'
-            ],
-            'address' => [
-                '@type' => 'PostalAddress',
-                'streetAddress' => '123 Commerce Plaza, Spanish Town Road',
-                'addressLocality' => 'Kingston',
-                'addressCountry' => 'Jamaica'
-            ]
+            'email' => 'info@vorkkloctech.com',
+            'availableLanguage' => ['English']
         ]);
         JsonLd::addValue('sameAs', [
-            'https://www.facebook.com/watopak.com',
-            'https://www.instagram.com/watopak_logistics'
+            'https://www.facebook.com/vorkkloctech',
+            'https://www.instagram.com/vorkkloctech'
         ]);
 
         return view('pages.contact');
@@ -447,69 +420,52 @@ class PageController extends Controller
     
     public function about()
     {
-        SEOTools::setTitle('About Watopak Logistics | #1 USA to Jamaica Shipping & Package Forwarding Service');
-        SEOTools::setDescription('Watopak Logistics is Jamaica\'s leading shipping company with 1000+ satisfied customers. Our USA mailbox service, air & sea freight options, and customs clearance expertise make online shopping from the US easy and affordable!');
+        SEOTools::setTitle('About VorkklocTech | Custom Software Development Company');
+        SEOTools::setDescription('VorkklocTech is a specialized software development and consultancy firm dedicated to building custom digital solutions that increase efficiency and productivity. Learn about our mission, vision, and flagship product Courier-App.');
         SEOMeta::setKeywords([
-            'Watopak Logistics history', 'Jamaica shipping company background', 'best Jamaica freight forwarder', 
-            'USA to Jamaica shipping experts', 'Jamaica package forwarding company', 'Jamaica shipping team',
-            'Watopak Logistics mission', 'Jamaica shipping values', 'Jamaica customs experts',
-            'Jamaica online shopping partner', 'USA mailbox Jamaica company', 'Jamaica shipping experience',
-            'trusted Jamaica shipping', 'Jamaica shipping reviews', 'Jamaica shipping testimonials',
-            'Jamaica shipping reliability', 'Jamaica shipping customer service', 'Jamaica shipping facilities'
+            'VorkklocTech about', 'Custom software development company', 'Software development firm', 
+            'Web development company', 'Mobile app development company', 'Software consulting',
+            'VorkklocTech mission', 'VorkklocTech vision', 'Courier-App',
+            'Custom software solutions', 'Software development team', 'Digital solutions company',
+            'Business software development', 'Software engineering company', 'Technology consulting',
+            'Software development expertise', 'Custom application development', 'Software development services'
         ]);
-        SEOTools::twitter()->setSite('@watopak.com');
+        SEOTools::twitter()->setSite('@vorkkloctech');
         
         // JSON-LD for about page
-        JsonLd::setTitle('About Watopak Logistics | #1 USA to Jamaica Shipping Service');
-        JsonLd::setDescription('Learn about Watopak Logistics\'s mission to provide affordable, reliable shipping from USA to Jamaica with exceptional customer service.');
+        JsonLd::setTitle('About VorkklocTech | Custom Software Development Company');
+        JsonLd::setDescription('Learn about VorkklocTech\'s mission to build custom digital solutions that increase efficiency and productivity for businesses.');
         JsonLd::setType('AboutPage');
         JsonLd::addValue('mainEntity', [
             '@type' => 'Organization',
-            'name' => 'Watopak Logistics Services',
-            'description' => 'Jamaica\'s leading shipping company providing USA mailbox addresses, air & sea freight, and customs clearance services for Jamaicans shopping online from US retailers.',
-            'url' => 'https://watopak.com',
-            'logo' => 'https://watopak.com/images/logo.png',
-            'image' => 'https://watopak.com/images/watopak-Logistics-hero.png',
-            'foundingDate' => '2024',
-            'foundingLocation' => [
-                '@type' => 'Place',
-                'address' => [
-                    '@type' => 'PostalAddress',
-                    'addressLocality' => 'Kingston',
-                    'addressCountry' => 'Jamaica'
-                ]
-            ],
-            'slogan' => 'Your trusted shipping partner from USA to Jamaica',
-            'numberOfEmployees' => [
-                '@type' => 'QuantitativeValue',
-                'value' => '15'
-            ],
+            'name' => 'VorkklocTech',
+            'description' => 'A specialized software development and consultancy firm dedicated to building custom digital solutions that increase efficiency and productivity for businesses.',
+            'url' => config('app.url'),
+            'logo' => config('app.url') . '/images/logo-no-text.png',
+            'image' => config('app.url') . '/images/watopak-logistics-hero.png',
+            'slogan' => 'Custom Software Development. Increase Efficiency And Productivity.',
             'address' => [
                 '@type' => 'PostalAddress',
-                'streetAddress' => '123 Commerce Plaza, Spanish Town Road',
-                'addressLocality' => 'Kingston',
-                'addressRegion' => 'Kingston',
-                'postalCode' => 'JMAAW01',
                 'addressCountry' => 'Jamaica'
             ],
             'contactPoint' => [
                 '@type' => 'ContactPoint',
-                'telephone' => '+1-876-555-9800',
                 'contactType' => 'customer service',
-                'email' => 'info@watopak.com',
-                'areaServed' => 'Jamaica',
+                'email' => 'info@vorkkloctech.com',
                 'availableLanguage' => ['English']
             ],
             'sameAs' => [
-                'https://www.facebook.com/watopak.com',
-                'https://www.instagram.com/watopak_logistics',
-                'https://twitter.com/watopak.com'
+                'https://www.facebook.com/vorkkloctech',
+                'https://www.instagram.com/vorkkloctech',
+                'https://twitter.com/vorkkloctech'
             ],
-            'award' => [
-                'Best Shipping Service in Jamaica 2024',
-                'Customer Service Excellence Award 2024'
-            ],
-            
+            'knowsAbout' => [
+                'Custom Software Development',
+                'Web Development',
+                'Mobile App Development',
+                'API Development',
+                'Software Consulting'
+            ]
         ]);
 
         return view('pages.about');
@@ -567,7 +523,7 @@ class PageController extends Controller
             'email' => $request->email,
             'message' => $request->message,
            ];
-            Mail::to('info@watopak.com')->send(new sendEmail($data));
+            Mail::to('info@vorkkloctech.com')->send(new sendEmail($data));
             return back()->with('success', 'Your message has been sent successfully!');
         } catch (\Exception $e) {
             return back()->with('error', 'Sorry, there was an error sending your message. Please try again later.' );
