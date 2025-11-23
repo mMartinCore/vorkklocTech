@@ -48,6 +48,15 @@
                     @endif
                 </a> 
                 <a 
+                    href="{{ route('products') }}" 
+                    class="relative px-4 py-2 rounded-lg font-primary font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-all duration-300 {{ $active === 'products' ? 'text-primary-700 bg-primary-100 shadow-sm' : '' }}"
+                >
+                    Products
+                    @if($active === 'products')
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-lg"></div>
+                    @endif
+                </a> 
+                <a 
                     href="{{ route('about') }}" 
                     class="relative px-4 py-2 rounded-lg font-primary font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-all duration-300 {{ $active === 'about' ? 'text-primary-700 bg-primary-100 shadow-sm' : '' }}"
                 >
@@ -115,6 +124,12 @@
                             class="text-theme_neutral-700 hover:text-theme_color_secondary-100 transition-colors duration-300 py-2 font-display text-sm tracking-wide uppercase {{ $active === 'services' ? 'text-theme_color_secondary-100 font-semibold' : '' }}"
                         >
                             Services
+                        </a> 
+                        <a 
+                            href="{{ route('products') }}" 
+                            class="text-theme_neutral-700 hover:text-theme_color_secondary-100 transition-colors duration-300 py-2 font-display text-sm tracking-wide uppercase {{ $active === 'products' ? 'text-theme_color_secondary-100 font-semibold' : '' }}"
+                        >
+                            Products
                         </a> 
                         <a 
                             href="{{ route('about') }}" 

@@ -388,6 +388,45 @@ class PageController extends Controller
         return view('pages.term-condition');
     }
 
+    public function products()
+    {
+        SEOTools::setTitle('Our Products | VorkklocTech - Ready-to-Use Software Solutions');
+        SEOTools::setDescription('Explore VorkklocTech\'s ready-to-use software products including our powerful Courier Management System with mobile app and professional website solutions for logistics businesses.');
+        SEOMeta::setKeywords([
+            'Courier Management System', 'Courier Software', 'Logistics Software', 'Delivery App',
+            'Courier Mobile App', 'Logistics Website', 'Courier Website Template', 'Shipping Software',
+            'Tracking System', 'Delivery Management System', 'Courier Business Solution',
+            'White Label Courier App', 'Transportation Management System', 'Last Mile Delivery Software'
+        ]);
+        SEOTools::twitter()->setSite('@vorkkloctech');
+        
+        // JSON-LD for products page
+        JsonLd::setTitle('VorkklocTech Products');
+        JsonLd::setDescription('Ready-to-use software solutions for courier and logistics businesses.');
+        JsonLd::setType('CollectionPage');
+        JsonLd::addValue('mainEntity', [
+            [
+                '@type' => 'SoftwareApplication',
+                'name' => 'Courier Management System',
+                'applicationCategory' => 'BusinessApplication',
+                'operatingSystem' => 'Web, Android, iOS',
+                'offers' => [
+                    '@type' => 'Offer',
+                    'price' => '0',
+                    'priceCurrency' => 'USD',
+                    'availability' => 'https://schema.org/InStock'
+                ]
+            ],
+            [
+                '@type' => 'WebSite',
+                'name' => 'Professional Courier Website',
+                'description' => 'High-converting website designed for courier businesses.'
+            ]
+        ]);
+
+        return view('pages.products');
+    }
+    
     public function contact()
     {
         SEOTools::setTitle('Contact VorkklocTech - Get Started with Custom Software Development');
